@@ -21,7 +21,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('course.urls', namespace='course')),
+    path('', include('study.urls', namespace='study')),
     path('users/', include('users.urls', namespace='users')),
-    path('', include('lesson.urls', namespace='lesson')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
