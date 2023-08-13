@@ -9,7 +9,7 @@ from study.views import CourseViewSet, LessonCreateAPIView, LessonListAPIView, L
 app_name = CourseConfig.name
 
 router = DefaultRouter()
-router.register(r'study', CourseViewSet, basename='study')
+router.register(r'course', CourseViewSet, basename='course')
 
 urlpatterns = [
     path('lesson/create/', LessonCreateAPIView.as_view(), name='lesson-create'),
