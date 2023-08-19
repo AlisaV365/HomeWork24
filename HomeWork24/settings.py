@@ -139,16 +139,45 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
 REST_FRAMEWORK = {
+    'DATETIME_FORMAT': '%Y-%m-%d %H:%M:%S',
+    'DATE_FORMAT': '%Y-%m-%d',
+    'TIME_FORMAT': '%H:%M',
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
+       'rest_framework.permissions.AllowAny',
     ]
 }
+
+# Проверка секретного ключа
+# if SECRET_KEY == 'django-insecure-s$09pd$!ge+zq6n!$*%p7y-n2^$@a%n&37^^@-m2cx$w7)=g==':
+#     print("Нужно изменить секретный ключ!")
 #
-# # Настройки срока действия токенов
-# SIMPLE_JWT = {
-#     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
-#     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-# }
+# # Проверка режима отладки
+# if DEBUG:
+#     print("Внимание! Режим отладки включен!")
+#
+# # Проверка разрешенных хостов
+# if not ALLOWED_HOSTS:
+#     print("Не указаны разрешенные хосты!")
+#
+# # Проверка наличия установленных приложений
+# if not INSTALLED_APPS:
+#     print("Не установлены приложения!")
+#
+# # Проверка базы данных
+# if DATABASES['default']['ENGINE'] != 'django.db.backends.postgresql':
+#     print("Используется неподдерживаемая база данных!")
+#
+# # Проверка типа автоинкрементного поля
+# if DEFAULT_AUTO_FIELD != 'django.db.models.BigAutoField':
+#     print("Тип автоинкрементного поля не является рекомендованным!")
+
+# # Проверка наличия аутентификации JWT
+# if 'rest_framework_simplejwt.authentication.JWTAuthentication' not in DEFAULT_PERMISSION_CLASSES:
+#     print("Не указана аутентификация JWT!")
+
+# Проверка прав доступа по умолчанию
+# if 'rest_framework.permissions.AllowAny' not in DEFAULT_PERMISSION_CLASSES:
+#     print("Не указаны права доступа по умолчанию!")
