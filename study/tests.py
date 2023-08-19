@@ -218,4 +218,3 @@ class StudyTestCase(APITestCase):
             cancelled_subscription.is_active
         )
 
-

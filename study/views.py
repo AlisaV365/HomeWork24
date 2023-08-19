@@ -100,4 +100,3 @@ class SubscriptionDestroyAPIView(generics.DestroyAPIView):
             return Response("Подписка удалена", status=status.HTTP_204_NO_CONTENT)
         except Subscription.DoesNotExist:
             return Response("Подписка не существует", status=status.HTTP_404_NOT_FOUND)
-
