@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85e594a9-ae49-4fec-9a4c-2965f50b0fb0" name="Changes" comment="HomeWork 25.2 .">
+    <list default="true" id="85e594a9-ae49-4fec-9a4c-2965f50b0fb0" name="Changes" comment="HomeWork 25.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +24,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AlisaV365"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="35012d01-a284-40bf-adb4-0b3bfc473168" />
+        <option name="url" value="https://github.com/AlisaV365/HomeWork24.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -226,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692451661236</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="HomeWork 25.2">
+      <option name="closed" value="true" />
+      <created>1692451882824</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692451882824</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,8 +270,8 @@
     <MESSAGE value="HomeWork 24.1" />
     <MESSAGE value="HomeWork 24.2" />
     <MESSAGE value="HomeWork 25.1" />
-    <MESSAGE value="HomeWork 25.2" />
     <MESSAGE value="HomeWork 25.2 ." />
-    <option name="LAST_COMMIT_MESSAGE" value="HomeWork 25.2 ." />
+    <MESSAGE value="HomeWork 25.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeWork 25.2" />
   </component>
 </project>
