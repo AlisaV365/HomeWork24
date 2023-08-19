@@ -78,8 +78,8 @@ class StudyTestCase(APITestCase):
         """Тестирование cоздания уроков"""
 
         data = {
-            'name': 'Test2',
-            'description': 'test2',
+            'name': 'Test3',
+            'description': 'test3',
             'urlvideo': 'https://youtube.com'
         }
 
@@ -172,6 +172,7 @@ class StudyTestCase(APITestCase):
         )
 
     def test_delete_lesson(self):
+        """Тестирование удаления уроков"""
         url = reverse(
             'study:lesson_delete', args=[self.lesson.pk]
         )
@@ -189,22 +190,28 @@ class StudyTestCase(APITestCase):
 
     def test_subscription_creation(self):
         """Тестирование создания подписки"""
-        subscription = Subscription.objects.create(user=self.user, course=self.course)
 
-        self.assertEqual(
-            subscription.user, self.user
-        )
-        self.assertEqual(
-            subscription.course, self.course
-        )
-        self.assertTrue(
-            subscription.is_active
-        )
-        self.assertFalse(
-            subscription.is_paid
-        )
+        subscription_exists = Subscription.objects.filter(user=self.user, course=self.course).exists()
+        if not subscription_exists:
+            subscription = Subscription.objects.create(user=self.user, course=self.course)
 
-    def test_cancel_subscription(self):
+            self.assertEqual(
+                subscription.user, self.user
+            )
+            self.assertEqual(
+                subscription.course, self.course
+            )
+            self.assertTrue(
+                subscription.is_active
+            )
+            self.assertFalse(
+                subscription.is_paid
+            )
+        else:
+            self.fail("Подписка с таким пользователем и курсом уже существует")
+
+
+def test_cancel_subscription(self):
         """Тестирование отмены подписки"""
         self.subscription.is_active = False
 

@@ -12,8 +12,6 @@ from study.models import Course, Lesson, Payments, Subscription
 from study.serializers import CourseSerializer, LessonSerializer, PaymentsSerializer, SubscriptionSerializer
 from rest_framework.views import APIView
 
-# from rest_framework_simplejwt.views import TokenObtainPairView
-
 
 class CourseViewSet(viewsets.ModelViewSet):
     serializer_class = CourseSerializer
@@ -58,12 +56,12 @@ class PaymentsListAPIView(generics.ListAPIView):
     filterset_fields = ['paid_course', 'paid_lesson', 'payment_method']  # Набор полей для фильтрации
     ordering_fields = ('payment_date',)  # Сортировка по дате оплаты
 
-
-
     """Создание и удаление подписки"""
+
 
 class SubscriptionCreateAPIView(generics.CreateAPIView):
     serializer_class = SubscriptionSerializer
+
     # permission_classes = [IsModerator | IsOwner]
 
     class SubscriptionView(APIView):
@@ -83,11 +81,9 @@ class SubscriptionCreateAPIView(generics.CreateAPIView):
                 return Response("Пользователь или курс не существует", status=status.HTTP_404_NOT_FOUND)
 
 
-
-
 class SubscriptionDestroyAPIView(generics.DestroyAPIView):
     queryset = Subscription.objects.all()
-    permission_classes = [IsAdminUser]
+    # permission_classes = [IsAdminUser]
 
     def delete(self, request, format=None):
         user_id = request.data.get('user_id')
@@ -100,4 +96,3 @@ class SubscriptionDestroyAPIView(generics.DestroyAPIView):
             return Response("Подписка удалена", status=status.HTTP_204_NO_CONTENT)
         except Subscription.DoesNotExist:
             return Response("Подписка не существует", status=status.HTTP_404_NOT_FOUND)
-
