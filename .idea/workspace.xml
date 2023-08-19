@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85e594a9-ae49-4fec-9a4c-2965f50b0fb0" name="Changes" comment="HomeWork 25.2">
-      <change beforePath="$PROJECT_DIR$/.idea/HomeWork24.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_08_2023,_16_24_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_08_2023__16_24__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="85e594a9-ae49-4fec-9a4c-2965f50b0fb0" name="Changes" comment="HomeWork 25.2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692454244441</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="HomeWork 25.2">
+      <option name="closed" value="true" />
+      <created>1692466497241</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692466497241</updated>
+    </task>
+    <task id="LOCAL-00019" summary="HomeWork 25.2">
+      <option name="closed" value="true" />
+      <created>1692466617330</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692466617330</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

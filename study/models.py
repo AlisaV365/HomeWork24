@@ -69,3 +69,4 @@ class Subscription(models.Model):
         unique_together = ['user', 'course']
         verbose_name = 'подписка'
         verbose_name_plural = 'подписки'
+
